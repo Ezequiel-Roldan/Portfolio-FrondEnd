@@ -8,19 +8,54 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <!--Fontawesome-->
   <script src="https://kit.fontawesome.com/dd51e920df.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="Portfolio-FronEnd-main/assets/css/style.css">
+  <link rel="stylesheet" href="/Portfolio FrondEnd main/assets/css/style.css">
   <title>Portafolio</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg  bg-blue">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">logo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fa-solid fa-user-lock"></i>
-      </button>
+      <a class="navbar-brand" href="#">
+      <img src="../assets/img/logo.png" alt="Logo de Argentina Programa" class="w-110">
+    </a>
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item"><i class="fa-brands fa-instagram fa-2x"></i></i></li>
+      <li class="list-group-item"><i class="fa-brands fa-twitter fa-2x"></i></i></li>
+      <li class="list-group-item"><i class="fa-brands fa-linkedin fa-2x"></i></li>
+      <li class="list-group-item">
+        <!-- Button trigger modal -->
+        <!--Boton que abre el login-->
+          <i data-bs-toggle="modal" data-bs-target="#loginModal" class="fa-solid fa-user-lock fa-2x"></i> 
+      </li>
+    </ul>
     </div>
   </nav>
-
+<!-- El login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Usuario</label>
+           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+           <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie.</div>
+          </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Ingresar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
