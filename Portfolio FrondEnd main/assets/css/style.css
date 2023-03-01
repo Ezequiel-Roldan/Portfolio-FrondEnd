@@ -1,7 +1,24 @@
+/* Color del panel superior */
 .bg-blue{
     background-color:black ;
 }
+
+/* Color transperente de los iconos del panel superior */
 .list-group-item{
     background-color:transparent;
     color:aliceblue;
+ }
+
+ /* Color de cada icono del panel superior */
+ .fa-brands.fa-instagram.fa-2x:hover{
+    --bs-text-opacity: 1;
+    color: #aa1596 !important;
+ }
+ .fa-brands.fa-twitter.fa-2x:hover{
+    --bs-text-opacity: 1;
+    color: #1c6fdd !important;
+ }
+ .fa-brands.fa-linkedin.fa-2x:hover{
+    --bs-text-opacity: 1;
+    color: #131d75 !important;
  }
